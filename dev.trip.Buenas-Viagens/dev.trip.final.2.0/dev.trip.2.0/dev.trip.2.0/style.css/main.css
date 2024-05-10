@@ -1,0 +1,961 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.contaner{
+  position: relative;
+  width: 100%; 
+  overflow: hidden;
+}
+
+.contaner img{
+ display: block;
+ height: 946px;
+ width: 1910px;
+ 
+}
+
+.menu {
+  display: flex ; 
+  padding:  1.5%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width:100%;
+  min-height: 5%;
+  background: linear-gradient(70deg,rgba(0, 195, 255, 0.29), rgba(69, 134, 255, 0.76), rgba(255, 255, 255, 0));   
+
+}
+
+.menu ul {
+    display: flex;
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+
+.menu ul li {
+  margin-top: 10px ;
+  margin-right: 20%;
+}
+
+.menu ul li a {   
+  color: white;
+  font-family: "Poppins";
+  text-decoration: none; 
+  cursor: pointer;
+  font-size: 25px;
+  transition: .2s;
+  
+}
+
+.menu ul li a:hover{
+     color: #ffad32; 
+    transform: scale(1.5s);
+
+}
+
+.h1-contaner{
+    
+    color: #fff;
+    margin-right: 20rem;
+    margin-left: 4rem;
+    font-family:'Lobster Two';
+    font-size: 35px;
+
+}
+
+
+.explore{
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255); 
+    text-align: center; 
+    font-size: 35px; 
+    text-shadow:0px 0px 15px rgb(0, 0, 0);
+  }
+
+  /*interactive board*/
+
+  .campo-interativo {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 15px;
+    justify-content: center;
+    position: absolute;
+    bottom: 70px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    width: 90%; /* Largura do quadrado */
+    height: auto; /* Altura do quadrado */
+    background-color: rgb(240, 240, 240); /* Cor do quadrado com transparência */
+    border-radius: 10px;
+    z-index: 999; /* Certifique-se de que o quadrado esteja acima de outros elementos */
+}
+
+.formulario {
+  display: flex;
+  align-items: center; /* Alinha os itens no centro horizontalmente */
+  justify-content:  space-between; /* Alinha os itens horizontalmente */
+  padding: 20px; /* Adiciona espaçamento interno */
+}
+
+.item {
+  display: flex;
+  flex-direction: column; /* Alinha os itens em coluna */
+  margin-right: 0%;
+  margin-bottom: 20px;
+  
+}
+
+.item label {
+  font-size: 19px;
+  margin-bottom: 7px; /* Adiciona espaço abaixo do label */
+  font-family: "Poppins";
+  color: rgb(90, 90, 90);
+}
+
+.item input {
+  width: 300px; /* Define a largura do input */
+  height: 40px;
+  border-radius: 5px;
+  border: 0.5px solid rgb(110, 110, 110);
+  padding-left: 10px;
+  font-family: "Poppins";
+  font-size: 18px;
+  
+}
+
+ 
+.campo-interativo button{
+  border-radius: 5px;
+  background-color:#FFAD32; /* Define a cor de fundo do botão */
+  color: #ffffff; /* Define a cor do texto do botão */
+  border: none; /* Remove a borda do botão */
+  padding: 7px 55px; /* Adiciona espaçamento interno ao botão */
+  font-size: 16px; /* Define o tamanho da fonte do texto do botão */
+  cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+  font-family: "Poppins";
+  margin-top: 25px;
+
+}
+
+.campo-interativo button:hover{
+  background-color: #747dff;
+}
+
+.input-grup button{
+
+  background-color:#FFAD32; /* Define a cor de fundo do botão */
+  color: #ffffff; /* Define a cor do texto do botão */
+  border: none; /* Remove a borda do botão */
+  padding: 7px 55px; /* Adiciona espaçamento interno ao botão */
+  font-size: 16px; /* Define o tamanho da fonte do texto do botão */
+  cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+  font-family: "Poppins";
+  margin-top: 25px;
+
+}
+
+.viagens button{
+
+  background-color:#FFAD32; /* Define a cor de fundo do botão */
+  color: #ffffff; /* Define a cor do texto do botão */
+  border: none; /* Remove a borda do botão */
+  padding: 7px 55px; /* Adiciona espaçamento interno ao botão */
+  font-size: 16px; /* Define o tamanho da fonte do texto do botão */
+  cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+  font-family: "Poppins";
+  margin-top: 25px;
+
+}
+
+/* parte dois do projeto */
+
+section.viagens{
+  position: relative; /* Estabelece um contexto de posicionamento para os elementos filhos */
+  display: flex;
+  min-height: 900px;
+}
+
+.informacoes {
+  /* display: flex; */
+  position: absolute; /* Posiciona o elemento de acordo com seu contexto */
+  top: 15%; /* Move o elemento para o topo da seção */
+  left: 8% ;
+  bottom: 10%;
+  font-size: 35px;
+  font-family:'Lobster Two';
+  color: #747DFF;
+
+}
+
+hr {
+  position:absolute;
+  border: none; /* Remove a borda padrão */
+  border-top: 7px solid #d88c00; /* Define uma borda superior sólida cinza */
+  border-radius: 4px;
+  margin: 205px 0 0 8%; /* Adiciona uma margem acima e abaixo do hr */
+  width: 15%; /* Define a largura do hr */
+}
+.viagens .texto{
+  margin-top: 16%;
+  margin-left: 8%;
+  margin-right: 2%;
+  font-family: "Poppins";
+  font-size: 20px;
+}
+
+
+.grupo-img {
+  display: flex;
+  position: relative;
+  margin-top: 5%;
+  margin-right: 10%;
+  
+  
+}
+
+.grupo-img img.primeira-imagem{
+  height: 250px;
+  margin-right: 5%;
+  margin-top: 15%;
+  border: 7px solid rgb(255, 255, 255); 
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.445);
+  border-radius: 10px;
+}
+.grupo-img img.segunda-imagem{
+  height: 250px;
+  margin-top: 15%;
+  border: 7px solid rgb(255, 255, 255); 
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.445);
+  border-radius: 10px;
+}
+
+.grupo-img img.terceira-imagem{
+ position: absolute;
+  height: 248px;
+
+  margin-top: 55%;
+  border: 7px solid rgb(255, 255, 255); 
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.445);
+  border-radius: 10px;
+}
+.grupo-img img.quarta-imagem{
+  position: absolute;
+  height: 250px;
+  width: 370px;
+  margin-top: 55%;
+  margin-left: 54.5%;
+  border: 7px solid rgb(255, 255, 255); 
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.445); position: absolute;
+  border-radius: 10px;
+}
+
+.viagens button{
+  position: absolute;
+  margin-top: 38%;
+  margin-left: 8%;
+  font-size: 22px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.viagens button:hover{
+  background-color: #747dff;
+}
+
+/* Para onde quer viajar */
+.destinos{
+  
+  background: linear-gradient(50deg, #FFE7C2,#BDACFF);
+  min-height: 1080px;
+
+}
+
+.locais{
+  font-family:'Lobster Two';
+  font-size: 38px;
+  text-align: center;
+  padding:5%;
+  color: #747DFF ;
+}
+
+.grupo-1-img{
+  
+  position: relative;
+  display: flex;
+  border: none;
+  background-color: #fff;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.445); position: absolute;
+  min-height: 20%;
+  width: 25.5%;
+  left: 150px;
+  /* overflow: hidden; */
+  border-radius: 10px;
+  column-gap: 15px;
+  
+}
+/*One-block. Grupo-1*/
+.one-block-img img{
+  height: 237px;
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: ;
+}
+.Cidade1{
+ font-size:  18px;
+ margin-left: 15px;
+ margin-top: 8px;
+ font-family:'Poppins';
+}
+
+.Cidade1 span{
+  font-size: 16px;
+}
+
+.text1{
+  font-size: 14px;
+  margin-left: 15px;
+  margin-top: 8px;
+  font-family: 'Poppins';
+}
+
+.valores1, .valor-antigo1 {
+  font-family: 'Poppins';
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 8px;
+  display: inline-block; 
+}
+
+.valor-antigo1 {
+  display: inline-block;
+  color: rgb(112, 112, 112);
+  font-size: 14px;
+  margin-top: 30px;
+  height: 50px;
+}
+
+.button1 {
+  width: auto; /* Largura ajustada automaticamente ao tamanho do texto */
+  height: auto; /* Altura ajustada automaticamente ao tamanho do texto */
+  margin-left: 30px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px; /* Espaçamento interno (10px acima/abaixo, 20px esquerda/direita) */
+  background: #FFAD32;
+}
+
+.one-block-img button:hover{
+  background-color: #747dff;
+}
+
+
+/* Two-Block Grupo1
+.two-block-img img{
+  height: 237px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.Cidade2{
+ font-size:  25px;
+ margin-left: 15px;
+ margin-top: 8px;
+ font-family:'Poppins';
+}
+
+.Cidade2 span{
+  font-size: 16px;
+}
+
+.text2{
+  font-size: 14px;
+  margin-left: 15px;
+  margin-top: 8px;
+  font-family: 'Poppins';
+}
+
+.valores2, .valor-antigo2 {
+  font-family: 'Poppins';
+  font-size: 22px;
+  margin-left: 15px;
+  margin-top: 8px;
+  display: inline-block; 
+}
+
+.valor-antigo2 {
+  display: inline-block;
+  color: rgb(112, 112, 112);
+  font-size: 14px;
+  margin-top: 30px;
+  height: 50px;
+}
+
+.button2 {
+  width: auto; 
+  height: auto; 
+  margin-left: 30px;
+  padding: 10px 20px; 
+} */
+
+
+/*One-block. Grupo-1*/
+.two-block-img img{
+  height: 237px;
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: ;
+}
+.Cidade2{
+ font-size:  18px;
+ margin-left: 15px;
+ margin-top: 8px;
+ font-family:'Poppins';
+}
+
+.Cidade2 span{
+  font-size: 16px;
+}
+
+.text2{
+  font-size: 14px;
+  margin-left: 15px;
+  margin-top: 8px;
+  font-family: 'Poppins';
+}
+
+.valores2, .valor-antigo2 {
+  font-family: 'Poppins';
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 8px;
+  display: inline-block; 
+}
+
+.valor-antigo2 {
+  display: inline-block;
+  color: rgb(112, 112, 112);
+  font-size: 14px;
+  margin-top: 30px;
+  height: 50px;
+}
+
+.button2 {
+  width: auto; /* Largura ajustada automaticamente ao tamanho do texto */
+  height: auto; /* Altura ajustada automaticamente ao tamanho do texto */
+  margin-left: 30px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px; /* Espaçamento interno (10px acima/abaixo, 20px esquerda/direita) */
+  background: #FFAD32;
+}
+
+.two-block-img button:hover{
+  background-color: #747dff;
+}
+
+/*Three-Block. Grupo1*/
+.three-block-img img{
+  height: 237px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.Cidade3{
+  font-size:  18px;
+ margin-left: 15px;
+ margin-top: 8px;
+ font-family:'Poppins';
+}
+
+.Cidade3 span{
+  font-size: 16px;
+}
+
+.text3{
+  font-size: 14px;
+  margin-left: 15px;
+  margin-top: 8px;
+  font-family: 'Poppins';
+}
+
+.valores3, .valor-antigo3 {
+  font-family: 'Poppins';
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.valor-antigo3 {
+  display: inline-block;
+  color: rgb(112, 112, 112);
+  font-size: 14px;
+  margin-top: 30px;
+  height: 50px;
+}
+
+.button3 {
+  width: auto; /* Largura ajustada automaticamente ao tamanho do texto */
+  height: auto; /* Altura ajustada automaticamente ao tamanho do texto */
+  margin-left: 30px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px; /* Espaçamento interno (10px acima/abaixo, 20px esquerda/direita) */
+  background: #FFAD32;
+}
+
+.three-block-img button:hover{
+  background-color: #747dff;
+}
+
+/*Four Block*/
+.four-block-img img{
+  height: 237px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.Cidade4{
+  font-size:  18px;
+  margin-left: 15px;
+  margin-top: 8px;
+  font-family:'Poppins';
+}
+
+.Cidade4 span{
+  font-size: 16px;
+}
+
+.text4{
+  font-size: 14px;
+  margin-left: 15px;
+  margin-top: 8px;
+  font-family: 'Poppins';
+}
+
+.valores4, .valor-antigo4 {
+  font-family: 'Poppins';
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 8px;
+  display: inline-block; 
+}
+
+.valor-antigo4 {
+  display: inline-block;
+  color: rgb(112, 112, 112);
+  font-size: 14px;
+  margin-top: 30px;
+  height: 50px;
+}
+
+.button4 {
+  width: auto; /* Largura ajustada automaticamente ao tamanho do texto */
+  height: auto; /* Altura ajustada automaticamente ao tamanho do texto */
+  margin-left: 30px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px; /* Espaçamento interno (10px acima/abaixo, 20px esquerda/direita) */
+  background: #FFAD32;
+}
+
+.four-block-img button:hover{
+  background-color: #747dff;
+} 
+
+/*Five Block.*/
+.five-block-img img{
+  height: 237px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.Cidade5{
+  font-size:  18px;
+  margin-left: 15px;
+  margin-top: 8px;
+  font-family:'Poppins';
+}
+
+.Cidade5 span{
+  font-size: 16px;
+}
+
+.text5{
+  font-size: 14px;
+  margin-left: 15px;
+  margin-top: 8px;
+  font-family: 'Poppins';
+}
+
+.valores5, .valor-antigo5 {
+  font-family: 'Poppins';
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 8px;
+  display: inline-block; 
+}
+
+.valor-antigo5 {
+  display: inline-block;
+  color: rgb(112, 112, 112);
+  font-size: 14px;
+  margin-top: 30px;
+  height: 50px;
+}
+
+.button5 {
+  width: auto; /* Largura ajustada automaticamente ao tamanho do texto */
+  height: auto; /* Altura ajustada automaticamente ao tamanho do texto */
+  margin-left: 30px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px; /* Espaçamento interno (10px acima/abaixo, 20px esquerda/direita) */
+  background: #FFAD32;
+}
+
+.five-block-img button:hover{
+  background-color: #747dff;
+}
+
+/*Six-block*/
+.six-block-img img{
+  height: 237px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.Cidade6{
+  font-size:  18px;
+  margin-left: 15px;
+  margin-top: 8px;
+  font-family:'Poppins';
+}
+
+.Cidade6 span{
+  font-size: 16px;
+}
+
+.text6{
+  font-size: 14px;
+  margin-left: 15px;
+  margin-top: 8px;
+  font-family: 'Poppins';
+}
+
+.valores6, .valor-antigo6 {
+  font-family: 'Poppins';
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 8px;
+  display: inline-block; 
+}
+
+.valor-antigo6 {
+  display: inline-block;
+  color: rgb(112, 112, 112);
+  font-size: 14px;
+  margin-top: 30px;
+  height: 50px;
+}
+
+.button6 {
+  width: auto; /* Largura ajustada automaticamente ao tamanho do texto */
+  height: auto; /* Altura ajustada automaticamente ao tamanho do texto */
+  margin-left: 30px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px; /* Espaçamento interno (10px acima/abaixo, 20px esquerda/direita) */
+  background: #FFAD32;
+}
+
+.six-block-img button:hover{
+  background-color: #747dff;
+}
+
+/*  Avaliações Sofia*/
+
+.Avaliação {
+  min-height: 100dvh;
+  /* display: flex; */
+  align-items: center;
+  font-family: 'Poppins';
+  font-size: var(--lx-text-01);
+  font-weight: 500;
+  color: rgb(112, 112, 112);
+  background-color: #ffffff;
+}
+
+.Avaliação h2 {
+  padding-top: 200px;
+  font-family: 'Lobster Two';
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 45px;
+  text-align: center;
+  color: #747DFF;
+
+}
+
+.carousel-container {
+  width: 80%;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--lx-gap);
+
+  .carousel {
+    aspect-ratio: 16/9;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    .item {
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      display: none;
+      transition: opacity 0.5s ease-in-out;
+
+      .caption {
+        width: 100%;
+        padding: 50px;
+        /* padding: var(--lx-space-01);  */
+        /* position: absolute; */
+        bottom: 0;
+        text-transform: italic;
+        text-align: center;
+        font-size: 18px;
+        
+      }
+
+      img {
+        /* width: 100%;
+        height: 100%; */
+        /* object-fit: cover; */
+        padding-left: 40%; 
+        
+        object-position: center;
+        justify-content: center;
+      }
+      
+      .nome p{
+        padding-left: 45%;
+      }
+
+      &.active {
+        opacity: 1;
+        display: block;
+      }
+    }
+  }
+
+  .btn {
+    padding: 1em 1em;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 900;
+    color: #ffffff;
+    border-radius: 5px;
+    background-color:  #9ca0a2;
+    transition: transform 0.2s ease-in-out;
+
+    &:active,
+    &:focus {
+      transform: translateY(-50%) scale(0.9);
+    }
+
+    &:hover {
+      transform: translateY(-50%) scale(0.96);
+    }
+  }
+
+  .prev {
+    left: -5%;
+  }
+
+  .next {
+    right: -5%;
+  }
+
+  
+}
+
+ fim doa Avaliação Sofia */
+
+
+/* footer samile */
+* {
+  font-family: 'Lobster', 'Poppins';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+main {
+  height: 80vh;
+}
+
+footer {
+  width: 100%;
+  color: #B8C0C7; /*Cor Cinza*/
+}
+
+hr{ /*Linha do footer_contacts que divide os nossos nomes*/
+  width: 300px;
+  height: 2px;
+  
+}
+
+.footer-link { /*Links das listas: Nossos Parceiros e Produtos*/
+  text-decoration: none;
+}
+
+#footer_content {
+  background-color:#3C4852;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 3.5rem 3.5rem;
+}
+
+#footer_contacts h1 {
+  margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+} 
+
+#footer_social_media .footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: #B8C0C7;
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+  font-size: 1.25rem;    
+}
+
+#footer_social_media .footer-link:hover {
+  opacity: 0.8;
+}
+
+#instagram {
+  background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+  background-color: #4267b3;
+}
+
+#whatsapp {
+  background-color: #25d366;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+}
+
+.footer-list .footer-link {
+  color: #B8C0C7;
+  transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+  color: #f3f3f3;
+}
+
+#footer_subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#footer_subscribe p { /*Cor do paragráfo do footer_subscribe (NewsLetter)*/
+  color: #B8C0C7;
+}
+
+#input_group { /*Caixa de email*/
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 4px;
+}
+
+#input_group input {
+  all: unset;
+  padding: 0.75rem;
+  width: 100%;
+}
+
+#input_group button { /*Botão para enviar o email*/
+  background-color: #f9ab39;
+  border: none;
+  color: var(--color-neutral-40);
+  padding: 0px 1.25rem;
+  font-size: 1.125rem;
+  height: 100%;
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+#input_group button:hover { /*Opacidade quando passar o mouse sobre o botão*/
+  opacity: 0.5;
+}
+
+#footer_copyright { /*Rodapé do CopyRight*/
+  display: flex;
+  justify-content: center;
+  background-color: #747DFF;
+  font-size: 0.9rem;
+  font-family: 'Poppins';
+  padding: 1.5rem;
+  font-weight: 100;
+}
+
+/*Responsividade do Rodapé*/
+@media screen and (max-width: 768px) { /*Responsividade para largura máxima de 768px*/
+  #footer_content { /*Footer content é a div mãe que está dentro do footer*/
+      grid-template-columns: repeat(2, 1fr); /*colunas de modelo de grade, é como vai ficr dividio nessa configuração de tela*/
+      gap: 2rem; /*Espaço de 2rem*/
+  }
+}
+
+@media screen and (max-width: 426px) { /*Responsividade para largura máxima de 426px*/
+  #footer_content { /*Footer content é a div mãe que está dentro do footer*/
+      grid-template-columns: repeat(1, 1fr);  /*colunas de modelo de grade, é como vai ficr dividio nessa configuração de tela*/
+      padding: 3rem 2rem; /*Espaço de 3rem a direita e 2rem a esquerda*/
+}
